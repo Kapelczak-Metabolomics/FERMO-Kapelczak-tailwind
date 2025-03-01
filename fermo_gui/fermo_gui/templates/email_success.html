@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>FERMO Job Success Notification (NOREPLY)</title>
-    <style>
+<meta charset="utf-8"/>
+<title>FERMO Job Success Notification (NOREPLY)</title>
+<style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -42,26 +43,26 @@
             text-decoration: underline;
         }
     </style>
-</head>
+<script src="https://cdn.tailwindcss.com"></script></head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1><i>FERMO</i> Job Success</h1>
-        </div>
-        <div class="content">
-            <p>Dear user,</p>
-            <p>The <i>FERMO</i> job with the ID</p>
-            <p><strong>{{ job_id }}</strong></p>
-            <p>has completed successfully.</p>
-            <p>Please follow this link to see the results:</p>
-            <p><a href="{{ root_url }}/results/{{ job_id }}/">{{ root_url }}/results/{{ job_id }}/</a></p>
-            <p>Please do not respond to this email as it is sent from an unmonitored address.</p>
-            <p>Kind regards,</p>
-            <p>The <i>FERMO</i> team</p>
-        </div>
-        <div class="footer">
-            <p>&copy; 2022 to present <i>FERMO</i>. All rights reserved.</p>
-        </div>
-    </div>
+<div class="container">
+<div class="header">
+<h1><i>FERMO</i> Job Success</h1>
+</div>
+<div class="content">
+<p>Dear user,</p>
+<p>The <i>FERMO</i> job with the ID</p>
+<p><strong>{{ job_id }}</strong></p>
+<p>has completed successfully.</p>
+<p>Please follow this link to see the results:</p>
+<p><a href="{{ root_url }}/results/{{ job_id }}/">{{ root_url }}/results/{{ job_id }}/</a></p>
+<p>Please do not respond to this email as it is sent from an unmonitored address.</p>
+<p>Kind regards,</p>
+<p>The <i>FERMO</i> team</p>
+</div>
+<div class="footer">
+<p>© 2022 to present <i>FERMO</i>. All rights reserved.</p>
+</div>
+</div>
 </body>
 </html>
